@@ -1,0 +1,48 @@
+Q1: 
+判定奇偶和数值大小；raw input转化
+Task
+Given an integer, , perform the following conditional actions:
+
+If  is odd, print Weird
+If  is even and in the inclusive range of  to , print Not Weird
+If  is even and in the inclusive range of  to , print Weird
+If  is even and greater than , print Not Weird
+Input Format
+
+A single line containing a positive integer, .
+
+Constraints 1<=n<=100
+
+Output Format
+
+Print Weird if the number is weird. Otherwise, print Not Weird.
+
+
+SOLUTION 1: 
+n = int(input().strip()) --- ！！！
+check = {True: "Not Weird","False: "Weird"}
+
+print(check[
+  n%2==0 and (
+    n in range (2.6) or 
+    n>20)
+   ])
+
+SOLUTION 2：
+n = int(raw_input())
+if n%2==0 and (n in range(2,6) or n>20):
+  print "Not ",
+print "Weird"
+
+Q2: 求两数加减乘法结果，输出不同行
+
+a,b =int(input()), int(input())
+print((a+b), (a-b), (a*b), sep='\n')
+# (sep='\n') will display the outputs in new line, (sep=',') seperate by a comma, only in Python 3
+
+Q3:
+S1:
+print(*[num**2 for num in range(n)], sep='\n') 
+# '*' arbitrary argument, use for loop to retrieve all the arguements
+S2:
+[print(i**2) for i in range(n)] # List Comprehesion
