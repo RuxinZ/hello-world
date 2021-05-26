@@ -46,3 +46,11 @@ print(*[num**2 for num in range(n)], sep='\n')
 # '*' arbitrary argument, use for loop to retrieve all the arguements
 S2:
 [print(i**2) for i in range(n)] # List Comprehesion
+
+
+Q4: 判定瑞年
+def is_leap(year):
+  return (year % 4 == 0 and (year % 100!=0 or year % 400 == 0))
+ # 不需要有if else因为return本身就会判定boolean value
+ 
+ 
