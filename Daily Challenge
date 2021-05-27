@@ -53,4 +53,17 @@ def is_leap(year):
   return (year % 4 == 0 and (year % 100!=0 or year % 400 == 0))
  # 不需要有if else因为return本身就会判定boolean value
  
- 
+05/26/21
+STRING VALIDATION
+验证输入信息格式是YYYY-MM-DD
+S：
+import datetime
+def validate(date_text):
+  try:
+    datetime.datetime.strptime(date_text, '%Y-%m=%d')
+  except ValueError:
+    print("Incorrect data format, should be YYYY-MM-DD")
+  else:
+    print (True)
+validate('2021-02-23')
+
