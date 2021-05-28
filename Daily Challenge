@@ -67,3 +67,5 @@ def validate(date_text):
     print (True)
 validate('2021-02-23')
 
+05/27/21
+STRING VALIDATION
